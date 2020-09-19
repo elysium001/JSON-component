@@ -1,0 +1,87 @@
+.box__json pre {
+    padding: 8px 0 0 0;
+    margin: 5px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    overflow: scroll;
+    max-height: calc(100% - 140px);
+}
+
+.box__json .string {
+    color: green;
+}
+
+.box__json.wrap .string {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.box__json .number {
+    color: darkorange;
+}
+
+.box__json .boolean {
+    color: blue;
+}
+
+.box__json .null {
+    color: magenta;
+}
+
+.box__json .key {
+    color: #000;
+    font-weight: bold;
+}
+
+.box__json {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 4px 4px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.box__json .box__heading {
+    text-align: center;
+    padding: 24px 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box__json .box__request {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    min-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box__json .box__request--type span {
+    background: green;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 2px 2px;
+}
+
+.box__json .box__request--type {
+    min-height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 10%;
+    min-width: 100px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__json .box__request--url {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 80%;
+    text-align: left;
+}
